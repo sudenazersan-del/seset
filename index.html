@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seset | Geleneksel Lezzet</title>
+  <meta name="description" content="Seset: 1930'lardan bu yana süren kasaplık geleneğini güvenilir ve kaliteli et ürünleriyle geleceğe taşıyan aile markası. Menemen, İzmir.">
+  <meta name="theme-color" content="#1b1919">
+  <link rel="icon" type="image/png" href="assets/img/seset-logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Üst bilgi çubuğu -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <a href="tel:+905333951854"><i class="fa-solid fa-phone"></i> 0533 395 18 54</a>
+        <a data-wa href="https://wa.me/905333951854" target="_blank" rel="noopener" class="wa-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </div>
+      <div class="topbar-right">
+        <a class="location-link" href="https://www.google.com/maps/search/?api=1&query=29+Ekim+Mah.+Ova+K%C3%BCme+Evleri+No%3A+37+Menemen+%C4%B0zmir" target="_blank" rel="noopener">
+          <i class="fa-solid fa-location-dot"></i> <span data-i18n="top.location">Konum</span> <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+        <div class="lang-switch" role="group" aria-label="Dil / Language">
+          <button type="button" data-lang="tr" class="is-active" aria-pressed="true">TR</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ana başlık: menü - logo - menü -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="nav nav-left" aria-label="Ana menü">
+        <a href="#top" data-i18n="nav.home">Ana Sayfa</a>
+        <a href="#hikaye" data-i18n="nav.story">Hikâyemiz</a>
+        <a href="#misyon" data-i18n="nav.mission">Misyon &amp; Vizyon</a>
+      </nav>
+
+      <a href="#top" class="brand" aria-label="Seset ana sayfa">
+        <img src="assets/img/seset-logo.png" alt="Seset - Geleneksel Lezzet" width="1135" height="475">
+      </a>
+
+      <nav class="nav nav-right" aria-label="İkincil menü">
+        <a href="#degerler" data-i18n="nav.values">Değerlerimiz</a>
+        <a href="#iletisim" data-i18n="nav.contact">İletişim</a>
+      </nav>
+
+      <button class="menu-toggle" type="button" aria-label="Menü" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Mobil menü">
+      <a href="#top" data-i18n="nav.home">Ana Sayfa</a>
+      <a href="#hikaye" data-i18n="nav.story">Hikâyemiz</a>
+      <a href="#misyon" data-i18n="nav.mission">Misyon &amp; Vizyon</a>
+      <a href="#degerler" data-i18n="nav.values">Değerlerimiz</a>
+      <a href="#iletisim" data-i18n="nav.contact">İletişim</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- Tanıtım videosu (16:9) -->
+    <section class="hero">
+      <div class="hero-video">
+        <!-- Video hazır olduğunda dosyayı assets/video/seset-tanitim.mp4 olarak eklemeniz yeterli. -->
+        <div class="video-frame">
+        <video autoplay muted loop playsinline preload="metadata" poster="">
+          <source src="assets/video/seset-tanitim.mp4" type="video/mp4">
+        </video>
+
+        <div class="video-placeholder" aria-hidden="true">
+          <div class="play-ring"><i class="fa-solid fa-play"></i></div>
+          <p data-i18n="video.soon">Tanıtım filmimiz çok yakında</p>
+          <span class="ratio-hint">16 : 9</span>
+        </div>
+        </div>
+
+        <div class="hero-overlay">
+          <div class="container hero-content">
+            <p class="eyebrow" data-i18n="hero.eyebrow">1930'lardan bugüne</p>
+            <h1 data-i18n="hero.title">Dededen Gelen Ustalık,<br>Bugünün Sofrasında</h1>
+            <p class="hero-text" data-i18n="hero.text">Seset; kuşaklar boyu süren kasaplık geleneğini, güvenilir ve kaliteli et ürünleriyle geleceğe taşıyor.</p>
+            <div class="hero-actions">
+              <a href="#hikaye" class="btn btn-primary" data-i18n="hero.cta">Hikâyemizi Keşfedin</a>
+              <a href="#iletisim" class="btn btn-ghost" data-i18n="hero.cta2">Bize Ulaşın</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marka hikâyesi -->
+    <section class="section story" id="hikaye">
+      <div class="container story-grid">
+        <div class="story-text reveal">
+          <p class="eyebrow" data-i18n="story.eyebrow">Marka Hikâyemiz</p>
+          <h2 data-i18n="story.title">Bir tezgâhta başlayan<br>güven hikâyesi</h2>
+          <p data-i18n="story.p1"></p>
+          <p data-i18n="story.p2"></p>
+          <p data-i18n="story.p3"></p>
+          <blockquote data-i18n="story.quote"></blockquote>
+        </div>
+
+        <ol class="timeline reveal">
+          <li>
+            <span class="tl-year" data-i18n="tl.1.year">1930'lar</span>
+            <h3 data-i18n="tl.1.title">İlk tezgâh</h3>
+            <p data-i18n="tl.1.text"></p>
+          </li>
+          <li>
+            <span class="tl-year" data-i18n="tl.2.year">Kuşaklar boyu</span>
+            <h3 data-i18n="tl.2.title">Elden ele zanaat</h3>
+            <p data-i18n="tl.2.text"></p>
+          </li>
+          <li>
+            <span class="tl-year" data-i18n="tl.3.year">Şubat 2024</span>
+            <h3 data-i18n="tl.3.title">Seset doğuyor</h3>
+            <p data-i18n="tl.3.text"></p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Misyon & Vizyon -->
+    <section class="section mv" id="misyon">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="mv.eyebrow">Misyon &amp; Vizyon</p>
+          <h2 data-i18n="mv.title">Neden varız, nereye gidiyoruz?</h2>
+        </div>
+        <div class="mv-grid">
+          <article class="mv-card reveal">
+            <i class="fa-solid fa-bullseye"></i>
+            <h3 data-i18n="mv.mission.title">Misyonumuz</h3>
+            <p data-i18n="mv.mission.text"></p>
+          </article>
+          <article class="mv-card reveal">
+            <i class="fa-regular fa-eye"></i>
+            <h3 data-i18n="mv.vision.title">Vizyonumuz</h3>
+            <p data-i18n="mv.vision.text"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Değerler -->
+    <section class="section values" id="degerler">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="values.eyebrow">Değerlerimiz</p>
+          <h2 data-i18n="values.title">Her üründe aynı üç söz</h2>
+        </div>
+        <div class="values-grid">
+          <article class="value reveal">
+            <span class="value-no">01</span>
+            <h3 data-i18n="values.1.title">Güven</h3>
+            <p data-i18n="values.1.text"></p>
+          </article>
+          <article class="value reveal">
+            <span class="value-no">02</span>
+            <h3 data-i18n="values.2.title">Ustalık</h3>
+            <p data-i18n="values.2.text"></p>
+          </article>
+          <article class="value reveal">
+            <span class="value-no">03</span>
+            <h3 data-i18n="values.3.title">Kalite</h3>
+            <p data-i18n="values.3.text"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- İletişim -->
+    <section class="section contact" id="iletisim">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="eyebrow" data-i18n="contact.eyebrow">İletişim</p>
+          <h2 data-i18n="contact.title">Bize ulaşın</h2>
+          <p class="contact-lead" data-i18n="contact.text"></p>
+
+          <ul class="contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <span class="label" data-i18n="contact.address">Adres</span>
+                <address>29 Ekim Mah. Ova Küme Evleri No: 37 C/1<br>Menemen / İzmir</address>
+              </div>
+            </li>
+            <li>
+              <i class="fa-brands fa-whatsapp"></i>
+              <div>
+                <span class="label" data-i18n="contact.phone">Telefon / WhatsApp</span>
+                <a href="tel:+905333951854">0533 395 18 54</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope"></i>
+              <div>
+                <span class="label" data-i18n="contact.email">E-posta</span>
+                <!-- E-posta adresi belli olunca buraya <a href="mailto:...">...</a> eklenecek -->
+                <span class="muted" data-i18n="contact.email.soon">Yakında eklenecek</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="contact-actions">
+            <a data-wa href="https://wa.me/905333951854" target="_blank" rel="noopener" class="btn btn-wa">
+              <i class="fa-brands fa-whatsapp"></i> <span data-i18n="contact.whatsapp">WhatsApp'tan Yazın</span>
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=29+Ekim+Mah.+Ova+K%C3%BCme+Evleri+No%3A+37+Menemen+%C4%B0zmir" target="_blank" rel="noopener" class="btn btn-ghost">
+              <i class="fa-solid fa-diamond-turn-right"></i> <span data-i18n="contact.directions">Yol Tarifi Al</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="map reveal">
+          <iframe title="Seset konum haritası" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=29%20Ekim%20Mah.%20Ova%20K%C3%BCme%20Evleri%20Menemen%20%C4%B0zmir&z=14&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/img/seset-logo.png" alt="Seset" class="footer-logo" width="1135" height="475">
+      <p class="footer-tagline" data-i18n="footer.tagline">Geleneksel Lezzet</p>
+      <div class="footer-links">
+        <a href="tel:+905333951854"><i class="fa-solid fa-phone"></i> 0533 395 18 54</a>
+        <span>Menemen / İzmir</span>
+      </div>
+      <p class="copy">© <span id="year">2026</span> Seset. <span data-i18n="footer.rights">Tüm hakları saklıdır.</span></p>
+    </div>
+  </footer>
+
+  <!-- Sabit WhatsApp butonu -->
+  <a data-wa href="https://wa.me/905333951854" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
