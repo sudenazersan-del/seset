@@ -166,6 +166,36 @@ p { margin: 0 0 1em; }
 .section-head { text-align: center; max-width: 720px; margin: 0 auto 56px; }
 .section-head .eyebrow::after { content: ""; width: 34px; height: 2px; background: var(--gold-grad); border-radius: 2px; }
 
+/* Ürünler */
+.products { background: var(--bg); }
+.section-lead { color: var(--muted); max-width: 560px; margin: -8px auto 0; }
+.product-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
+.product {
+  position: relative; aspect-ratio: 3 / 4; border-radius: var(--radius); overflow: hidden;
+  background: var(--surface); border: 1px solid var(--line); isolation: isolate;
+}
+.product img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2;
+  filter: saturate(.9) contrast(1.05); transition: transform .7s ease, filter .4s;
+}
+.product::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(180deg, rgba(14,12,12,0) 35%, rgba(14,12,12,.6) 62%, rgba(14,12,12,.96) 100%);
+}
+.product::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px;
+  background: var(--red); transform: scaleX(0); transform-origin: left; transition: transform .4s;
+}
+.product:hover img { transform: scale(1.07); filter: saturate(1.05) contrast(1.05); }
+.product:hover::after { transform: scaleX(1); }
+.product-body { position: absolute; left: 0; right: 0; bottom: 0; padding: 22px 20px 24px; }
+.product-no { font-family: var(--font-display); font-size: 12.5px; letter-spacing: .25em; color: var(--gold); }
+.product h3 { font-size: 26px; text-transform: uppercase; margin: 2px 0 6px; }
+.product p { color: #d4ccc4; font-size: 14px; line-height: 1.55; margin: 0; }
+.products-foot { margin-top: 44px; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; }
+.products-foot p { margin: 0; color: #cfc7bf; }
+.products-note { font-size: 12.5px; color: #7d756e; font-style: italic; }
+
 /* Hikâye */
 .story { background: var(--bg); position: relative; }
 .story-grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 80px; align-items: start; }
@@ -261,6 +291,9 @@ p { margin: 0 0 1em; }
 
 /* ===== Duyarlı tasarım ===== */
 @media (max-width: 1024px) {
+  .product-grid { grid-template-columns: repeat(6, 1fr); }
+  .product { grid-column: span 2; }
+  .product:nth-child(4), .product:nth-child(5) { grid-column: span 3; aspect-ratio: 3 / 2; }
   .nav { gap: 22px; }
   .nav-left { padding-right: 28px; }
   .nav-right { padding-left: 28px; }
@@ -310,6 +343,12 @@ p { margin: 0 0 1em; }
 }
 
 @media (max-width: 600px) {
+  .product-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .product, .product:nth-child(4) { grid-column: span 1; aspect-ratio: 3 / 4; }
+  .product:nth-child(5) { grid-column: span 2; aspect-ratio: 16 / 10; }
+  .product-body { padding: 14px 14px 16px; }
+  .product h3 { font-size: 20px; }
+  .product p { font-size: 12.5px; }
   .container { padding: 0 16px; }
   .topbar-inner { min-height: 40px; }
   .topbar-left .wa-link, .location-link .fa-arrow-right-long { display: none; }

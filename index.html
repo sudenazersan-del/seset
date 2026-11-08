@@ -40,8 +40,8 @@
     <div class="container header-inner">
       <nav class="nav nav-left" aria-label="Ana menü">
         <a href="#top" data-i18n="nav.home">Ana Sayfa</a>
+        <a href="#urunler" data-i18n="nav.products">Ürünlerimiz</a>
         <a href="#hikaye" data-i18n="nav.story">Hikâyemiz</a>
-        <a href="#misyon" data-i18n="nav.mission">Misyon &amp; Vizyon</a>
       </nav>
 
       <a href="#top" class="brand" aria-label="Seset ana sayfa">
@@ -49,6 +49,7 @@
       </a>
 
       <nav class="nav nav-right" aria-label="İkincil menü">
+        <a href="#misyon" data-i18n="nav.mission">Misyon &amp; Vizyon</a>
         <a href="#degerler" data-i18n="nav.values">Değerlerimiz</a>
         <a href="#iletisim" data-i18n="nav.contact">İletişim</a>
       </nav>
@@ -60,6 +61,7 @@
 
     <nav class="mobile-nav" aria-label="Mobil menü">
       <a href="#top" data-i18n="nav.home">Ana Sayfa</a>
+      <a href="#urunler" data-i18n="nav.products">Ürünlerimiz</a>
       <a href="#hikaye" data-i18n="nav.story">Hikâyemiz</a>
       <a href="#misyon" data-i18n="nav.mission">Misyon &amp; Vizyon</a>
       <a href="#degerler" data-i18n="nav.values">Değerlerimiz</a>
@@ -92,9 +94,69 @@
             <p class="hero-text" data-i18n="hero.text">Seset; kuşaklar boyu süren kasaplık geleneğini, güvenilir ve kaliteli et ürünleriyle geleceğe taşıyor.</p>
             <div class="hero-actions">
               <a href="#hikaye" class="btn btn-primary" data-i18n="hero.cta">Hikâyemizi Keşfedin</a>
-              <a href="#iletisim" class="btn btn-ghost" data-i18n="hero.cta2">Bize Ulaşın</a>
+              <a href="#urunler" class="btn btn-ghost" data-i18n="hero.cta2">Ürünlerimiz</a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ürünlerimiz (satış yok, sadece tanıtım). Görseller şimdilik Unsplash stok fotoğrafları; gerçek ürün fotoğrafları gelince değiştirilecek. -->
+    <section class="section products" id="urunler">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="products.eyebrow">Ürünlerimiz</p>
+          <h2 data-i18n="products.title">Ustalıkla hazırlanan lezzetler</h2>
+          <p class="section-lead" data-i18n="products.text"></p>
+        </div>
+        <div class="product-grid">
+          <article class="product reveal">
+            <img src="https://images.unsplash.com/photo-1777557863930-ed0d73e970dc?w=720&h=960&fit=crop&q=75&auto=format" alt="Pastırma" loading="lazy" width="720" height="960">
+            <div class="product-body">
+              <span class="product-no">01</span>
+              <h3 data-i18n="products.pastirma.name">Pastırma</h3>
+              <p data-i18n="products.pastirma.text"></p>
+            </div>
+          </article>
+          <article class="product reveal">
+            <img src="https://images.unsplash.com/photo-1542901031-ec5eeb518e83?w=720&h=960&fit=crop&q=75&auto=format" alt="Sucuk" loading="lazy" width="720" height="960">
+            <div class="product-body">
+              <span class="product-no">02</span>
+              <h3 data-i18n="products.sucuk.name">Sucuk</h3>
+              <p data-i18n="products.sucuk.text"></p>
+            </div>
+          </article>
+          <article class="product reveal">
+            <img src="https://images.unsplash.com/photo-1598401863352-3de5501f4890?w=720&h=960&fit=crop&q=75&auto=format" alt="Sosis" loading="lazy" width="720" height="960">
+            <div class="product-body">
+              <span class="product-no">03</span>
+              <h3 data-i18n="products.sosis.name">Sosis</h3>
+              <p data-i18n="products.sosis.text"></p>
+            </div>
+          </article>
+          <article class="product reveal">
+            <img src="https://images.unsplash.com/photo-1620238259493-79ab814a426c?w=720&h=960&fit=crop&q=75&auto=format" alt="Köfte" loading="lazy" width="720" height="960">
+            <div class="product-body">
+              <span class="product-no">04</span>
+              <h3 data-i18n="products.kofte.name">Köfte</h3>
+              <p data-i18n="products.kofte.text"></p>
+            </div>
+          </article>
+          <article class="product reveal">
+            <img src="https://images.unsplash.com/photo-1768758922235-744d7342683a?w=720&h=960&fit=crop&q=75&auto=format" alt="Salam" loading="lazy" width="720" height="960">
+            <div class="product-body">
+              <span class="product-no">05</span>
+              <h3 data-i18n="products.salam.name">Salam</h3>
+              <p data-i18n="products.salam.text"></p>
+            </div>
+          </article>
+        </div>
+        <div class="products-foot reveal">
+          <p data-i18n="products.cta.text">Ürünlerimiz ve sipariş hakkında bilgi almak için bize yazın.</p>
+          <a data-wa href="https://wa.me/905333951854" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fa-brands fa-whatsapp"></i> <span data-i18n="products.cta.button">Bilgi Alın</span>
+          </a>
+          <span class="products-note" data-i18n="products.note">Görseller temsilidir.</span>
         </div>
       </div>
     </section>
