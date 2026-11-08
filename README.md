@@ -1,0 +1,3 @@
+# seset
+
+Web sayfası projesi.
